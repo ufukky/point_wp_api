@@ -1,0 +1,9 @@
+temp token 18.8.22/13.30 exp in:24h : 
+EAALkDmsFzNkBALZC27nPo2ZADztjcZBEGZBcTJELrvbvIUdoL2sh6qttOLtyApZCQn45fBv8iL12K5rjpV1SS9t5clKDZAf1uUXFvXwGGDORbTXU1CFFcZBhToJxcknZBHgcIeJJj6BpFQXUw6WoTTIfKLUOi65pQdNl23UP0fs3Q5CZCvpcxdCLKl8v5vptuaw04HLSZC2ZBYoeHbaZBqCZCEslSfzTwAtIRKykZD
+
+
+curl -i -X POST `
+  https://graph.facebook.com/v13.0/102597229243172/messages `
+  -H 'Authorization: Bearer EAALkDmsFzNkBALZC27nPo2ZADztjcZBEGZBcTJELrvbvIUdoL2sh6qttOLtyApZCQn45fBv8iL12K5rjpV1SS9t5clKDZAf1uUXFvXwGGDORbTXU1CFFcZBhToJxcknZBHgcIeJJj6BpFQXUw6WoTTIfKLUOi65pQdNl23UP0fs3Q5CZCvpcxdCLKl8v5vptuaw04HLSZC2ZBYoeHbaZBqCZCEslSfzTwAtIRKykZD' `
+  -H 'Content-Type: application/json' `
+  -d '{ \"messaging_product\": \"whatsapp\", \"to\": \"905462495859\", \"type\": \"template\", \"template\": { \"name\": \"hello_world\", \"language\": { \"code\": \"en_US\" } } }'
